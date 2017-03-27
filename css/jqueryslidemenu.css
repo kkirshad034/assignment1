@@ -1,0 +1,121 @@
+.jqueryslidemenu{
+font: bold 12px Verdana;
+background: #414141;
+width: 100%;
+text-align:left;
+vertical-align:middle;
+
+}
+
+.jqueryslidemenu ul{
+margin: 0;
+padding: 0;
+list-style-type: none;
+vertical-align:middle;
+
+}
+
+/*Top level list items*/
+.jqueryslidemenu ul li{
+position: relative;
+display: inline;
+float: left;
+vertical-align:middle;
+
+}
+
+/*Top level menu link items style*/
+.jqueryslidemenu ul li a{
+display: block;
+background: #484545; 
+padding: 4px;
+border-right: 0px solid #11aad7;
+text-decoration: none;
+cursor:hand;
+width:160px;
+height:16px;
+border-spacing: 2px;
+/*border-bottom: 1px solid #FFFFFF;
+border-right: 1px solid #FFFFFF;*/
+border-top: 1px solid #FFFFFF;
+border-left: 1px solid #FFFFFF;
+}
+
+* html .jqueryslidemenu ul li a{ /*IE6 hack to get sub menu links to behave correctly*/
+display: inline-block;
+}
+
+.jqueryslidemenu ul li a:link, .jqueryslidemenu ul li a:visited{
+/*color: white;*/
+color: #ffffff;
+}
+
+.jqueryslidemenu ul li a:hover{
+/*background: #11aad7; tab link background during hover state*/
+ background:#FF9933;
+color: #000000;
+}
+	
+/*1st sub level menu*/
+.jqueryslidemenu ul li ul{
+position: absolute;
+left: 0;
+display: block;
+visibility: hidden;
+vertical-align:middle;
+
+}
+
+/*Sub level menu list items (undo style from Top level List Items)*/
+.jqueryslidemenu ul li ul li{
+display: list-item;
+float: none;
+vertical-align:middle;
+
+}
+
+/*All subsequent sub menu levels vertical offset after 1st level sub menu */
+.jqueryslidemenu ul li ul li ul{
+top: 0;
+vertical-align:middle;
+
+}
+
+/* Sub level menu links style */
+.jqueryslidemenu ul li ul li a{
+font: bold 12px Verdana;
+color: #565656;
+width: 160px; /*width of sub menus*/
+padding:4px;
+margin: 0px;
+height: 16px;
+border-spacing: 2px;
+border-top-width: 0px;
+border-bottom: 1px solid #FFFFFF;
+/*border-right: 1px solid #FFFFFF;
+border-top: 1px solid #FFFFFF;*/
+border-left: 1px solid #FFFFFF;
+}
+
+.jqueryslidemenuz ul li ul li a:hover{ /*sub menus hover style*/
+background: #;DEF2FD  
+color: #565656;
+vertical-align:middle;
+
+}
+
+/* ######### CSS classes applied to down and right arrow images  ######### */
+
+.downarrowclass{
+position: absolute;
+top: 0px;
+right: 0px;
+}
+
+.rightarrowclass{
+position: absolute;
+top: 6px;
+right: 15px;
+vertical-align:middle;
+
+}
